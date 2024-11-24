@@ -1,0 +1,6 @@
+.hero {
+    height: 100vh;
+    background-image: url('/assets/Bg-hero/website.png');
+    box-sizing: border-box;
+    margin-top: -292px;
+}

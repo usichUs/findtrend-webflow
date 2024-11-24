@@ -1,2 +1,63 @@
-@import url('/blocks/page/page.css');
+/* General */
+/* @import url("/blocks/page/page.css"); */
 @import url("/vendor/normalize.css");
+@import url("/vendor/fonts/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Header */
+/* @import url('/blocks/header/__logo/header__logo.css'); */
+
+/* Hero */
+/* @import url("/blocks/hero/hero.css"); */
+
+body {
+  background-color: #fff;
+  font-family: "Effra", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  box-sizing: border-box;
+}
+
+/* Header */
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 18px;
+}
+
+.header__logo {
+  width: 171px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url("/assets/Bg-hero/website.png");
+  box-sizing: border-box;
+  margin-top: -292px;
+}
