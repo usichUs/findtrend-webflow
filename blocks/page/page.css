@@ -1,0 +1,35 @@
+/* Colors
+Green {
+    A8FF35
+    87D322
+    8CC83A 
+}
+
+Black {
+    000000
+    2B2B2B 
+}
+
+Grey {
+    8B8B8B
+    ADADAD
+    F5F5F5
+    F1F1F1 
+}
+
+White {
+    FFFFFF 
+}
+*/
+
+page {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  box-sizing: border-box;
+}
