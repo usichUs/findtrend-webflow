@@ -106,25 +106,42 @@ img {
   gap: 40px;
 }
 
+.header__button {
+  transition: all 0.3s ease;
+}
+
+.header__button:hover {
+  opacity: 0.7;
+}
+
 .header__button-border {
   color: var(--black-1);
 
   padding: 12px 32px;
   background-color: var(--white);
   border-radius: 40px;
+  border: 1px transparent solid;
+
+  transition: all 0.3s ease;
+}
+
+.header__button-border:hover {
+  background-color: transparent;
+  border: 1px var(--white) solid;
+
+  color: var(--white);
 }
 
 /* Hero */
 .hero {
-  height: 100vh;
   background-image: url("/assets/Bg-hero/website.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
   margin-top: -292px;
-  padding-bottom: 300px;
-  padding-top: 400px;
+  padding-bottom: 140px;
+  padding-top: 292px;
 }
 
 .hero .container {
@@ -141,7 +158,7 @@ img {
 
 .hero__title {
   font-size: 72px;
-  margin: 40px 0;
+  margin-top: 150px;
 }
 
 .hero__desc {
@@ -160,48 +177,61 @@ img {
 
   background-color: var(--green-1);
   border-radius: 40px;
+
+  transition: all 0.3s ease;
+}
+
+.hero__get-started-button:hover {
+  background-color: transparent;
+  border: 1px #ff7c02 solid;
+
+  color: var(--white);
 }
 
 .hero__tabs {
-  position: relative;
   margin-top: 95px;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -50px;
 }
 
 .hero__tab {
-  width: 350px;
-  position: absolute;
+  max-width: 350px;
+  position: relative;
 }
 
 .hero__tab:nth-child(1) {
   transform: rotate(-4deg);
-  z-index: 10;
-  left: calc(var(--delta) * 0.3);
+  z-index: 3;
+  margin-right: -150px;
 }
 
 .hero__tab:nth-child(2) {
   transform: rotate(2deg);
-  z-index: 9;
-  left: calc(var(--delta) * 2);
+  z-index: 2;
+  margin-right: -90px;
+  margin-bottom: -100px;
 }
 
 .hero__tab:nth-child(3) {
   transform: rotate(-2deg);
-  z-index: 8;
-  left: calc(var(--delta) * 3.5);
+  z-index: 1;
+  margin-top: -20px;
+  margin-right: -230px;
 }
 
 .hero__tab:nth-child(4) {
   transform: rotate(4deg);
-  z-index: 7;
-  left: calc(var(--delta) * 5);
+  z-index: 0;
+  margin-left: 121px;
+  margin-bottom: -100px;
 }
 
-.hero__tab:nth-child(odd) {
-  top: calc(var(--delta) * -0.3);
-}
-
-.hero__tab:nth-child(even) {
-  top: calc(var(--delta) * -0);
+.hero__tab:hover {
+  transform: scale(1.05) rotate(0deg);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 5; /* Текущий таб становится сверху */
 }
