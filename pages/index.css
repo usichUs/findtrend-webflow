@@ -60,10 +60,18 @@ img {
   box-sizing: border-box;
 }
 
-/* Header */
+.bg__wrapper {
+  background-image: url("/assets/Bg-hero/website.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  height: 100vh;
+}
+
+/* Header */
 .header {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .header .container {
@@ -127,21 +135,15 @@ img {
 
 .header__button-border:hover {
   background-color: transparent;
-  border: 1px var(--white) solid;
+  border: 1px var(--green-3) solid;
 
-  color: var(--white);
+  color: var(--green-3);
 }
 
 /* Hero */
 .hero {
-  background-image: url("/assets/Bg-hero/website.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   box-sizing: border-box;
-  margin-top: -292px;
   padding-bottom: 140px;
-  padding-top: 292px;
 }
 
 .hero .container {
@@ -158,7 +160,7 @@ img {
 
 .hero__title {
   font-size: 72px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .hero__desc {
@@ -166,12 +168,14 @@ img {
 }
 
 .hero__get-started {
-  margin-top: 56px;
+  margin-top: 80px;
 }
 
 .hero__get-started-button {
   color: var(--black-1);
   font-weight: 700;
+
+  max-width: 180px;
 
   padding: 16px 32px;
 
@@ -179,6 +183,28 @@ img {
   border-radius: 40px;
 
   transition: all 0.3s ease;
+
+  position: relative;
+}
+
+.hero__get-started::after {
+  content: url("/assets/logos_icons/arrow_white.svg");
+  transform: rotate(100deg);
+  transform-origin: center;
+  margin-left: 20px;
+  margin-top: -10px;
+
+  border: 1px transparent solid;
+
+  position: absolute;
+}
+
+.hero__get-started::before {
+  content: url("/assets/logos_icons/txt.svg");
+  text-align: center;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -40px;
 }
 
 .hero__get-started-button:hover {
@@ -233,5 +259,5 @@ img {
 .hero__tab:hover {
   transform: scale(1.05) rotate(0deg);
   transition: transform 0.3s ease, z-index 0.3s ease;
-  z-index: 5; /* Текущий таб становится сверху */
+  z-index: 5;
 }
