@@ -27,6 +27,7 @@
 
   /* White */
   --white: #ffffff;
+  --white-2: #fafafa;
 
   --delta: 150px;
 }
@@ -143,7 +144,7 @@ img {
 /* Hero */
 .hero {
   box-sizing: border-box;
-  padding-bottom: 140px;
+  padding-bottom: 163px;
 }
 
 .hero .container {
@@ -320,6 +321,122 @@ img {
   text-align: center;
 
   margin: 0;
+}
+
+/* long-text */
+
+.long-text {
+  padding: 140px 0;
+}
+
+.long-text .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.long-text__text {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--black-1);
+}
+
+.long-text__text span {
+  color: var(--grey-2);
+}
+
+/* partner */
+.partner {
+  padding: 140px 0;
+  padding-top: 0;
+}
+
+.partner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-direction: column;
+}
+
+.partner__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--black-1);
+}
+
+.partner__brands-wrapper {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* twitter */
+.twitter {
+  background-color: var(--white-2);
+}
+
+.twitter .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--black-1);
+}
+
+.twitter__socials-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 24px;
+  margin-bottom: 77px;
+}
+
+.twitter__socials-wrapper img {
+  padding: 32px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.twitter__socials-wrapper img:hover {
+  background-color: var(--green-1);
+  transition: all 0.3s ease;
+}
+
+.twitter__tweets-wrapper {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.twitter__tweets-wrapper img {
+  max-width: 800px;
+}
+
+.twitter__button {
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 16px 32px;
+
+  background-color: var(--black-1);
+  border-radius: 40px;
+
+  margin-bottom: 140px;
+
+  transition: all 0.3s ease;
+}
+
+.twitter__button:hover {
+  background-color: transparent;
+  border: 1px var(--black-1) solid;
+
+  color: var(--black-1);
 }
 
 /** Adaptive */
