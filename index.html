@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/pages/index.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        ScrollReveal({ duration: 1000 }).reveal(".hero", { delay: 500 });
-        ScrollReveal({ duration: 1000 }).reveal("header", { delay: 500 });
-        ScrollReveal().reveal(".new-tab__title", { delay: 500 });
-      });
-    </script>
   </head>
   <body class="page">
     <div class="bg__wrapper">
@@ -39,7 +31,7 @@
         </nav>
       </header>
 
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <div class="hero__wrapper">
             <h1 class="hero__title">Minimize your tabs. Find the trends!</h1>
@@ -66,7 +58,7 @@
       <section class="new-tab">
         <div class="container">
           <h2 class="new-tab__title">Open new tabs is sh*t</h2>
-          <div class="new-tab__tab-wrapper">
+          <div class="new-tab__tab-wrapper hidden">
             <img class="new-tab__tab" src="/assets/tabs/tab5.png" alt="" />
           </div>
           <p class="new-tab__desc">
@@ -78,7 +70,7 @@
       </section>
       <section class="long-text">
         <div class="container">
-          <p class="long-text__text">
+          <p class="long-text__text hidden">
             Findtrend helps you to increase your productivity and reduce your
             computer's memory load,
             <span
@@ -135,7 +127,7 @@
         <div class="container">
           <h2 class="subscription__title">Get your best deal</h2>
           <div class="subscription__switch-wrapper">
-            <p class="subscription__text active">Monthly</p>
+            <p class="subscription__text active" id="monthly">Monthly</p>
             <div class="subscription__switch-outter">
               <div class="subscription__switch-inner"></div>
             </div>
@@ -147,7 +139,7 @@
             />
           </div>
           <div class="subscription__plans">
-            <div class="subscription__plan">
+            <div class="subscription__plan hidden">
               <div class="plan__header">
                 <h3 class="plan__title">Personal</h3>
                 <p class="plan__desc">Special first packet for all</p>
@@ -163,7 +155,7 @@
               </div>
               <a href="" class="plan__button">Start Free Trial</a>
             </div>
-            <div class="subscription__plan">
+            <div class="subscription__plan hidden">
               <div class="plan__header">
                 <h3 class="plan__title">Regular</h3>
                 <p class="plan__desc">Recommended for personal pro</p>
@@ -180,7 +172,7 @@
               </div>
               <a href="" class="plan__button">Start Free Trial</a>
             </div>
-            <div class="subscription__plan">
+            <div class="subscription__plan hidden">
               <div class="plan__header">
                 <h3 class="plan__title">Premium</h3>
                 <p class="plan__desc">Packet for Startup & Company</p>
@@ -224,6 +216,7 @@
         <li class="footer__link"><a href="">Careers</a></li>
       </ul>
     </footer>
+    <script src="/pages/index.js"></script>
   </body>
 </html>
 
