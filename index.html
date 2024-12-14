@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/pages/index.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        ScrollReveal({ duration: 1000 }).reveal(".hero", { delay: 500 });
+        ScrollReveal({ duration: 1000 }).reveal("header", { delay: 500 });
+        ScrollReveal().reveal(".new-tab__title", { delay: 500 });
+      });
+    </script>
   </head>
   <body class="page">
     <div class="bg__wrapper">
@@ -13,7 +21,7 @@
           <div class="container">
             <img
               class="header__logo"
-              src="/assets/logos_icons/Logo color.png"
+              src="/assets/logos_icons/Logo_color.png"
               alt=""
             />
             <ul class="header__list">
@@ -30,103 +38,199 @@
           </div>
         </nav>
       </header>
-      <main>
-        <section class="hero">
-          <div class="container">
-            <div class="hero__wrapper">
-              <h1 class="hero__title">Minimize your tabs. Find the trends!</h1>
-              <p class="hero__desc">
-                Don’t let your computer memories consumes all of those browser
-                tabs. <br />
-                Findtrend let you gathers all of your favorite website into one
-                place.
-              </p>
-              <div class="hero__get-started">
-                <a class="hero__get-started-button" href="">Get Started 🔥</a>
-              </div>
-            </div>
-            <div class="hero__tabs">
-              <img src="/assets/tabs/tab1.png" alt="" class="hero__tab" />
-              <img src="/assets/tabs/tab2.png" alt="" class="hero__tab" />
-              <img src="/assets/tabs/tab3.png" alt="" class="hero__tab" />
-              <img src="/assets/tabs/tab4.png" alt="" class="hero__tab" />
-            </div>
-          </div>
-        </section>
-        <section class="new-tab">
-          <div class="container">
-            <h2 class="new-tab__title">Open new tabs is sh*t</h2>
-            <div class="new-tab__tab-wrapper">
-              <img class="new-tab__tab" src="/assets/tabs/tab5.png" alt="" />
-            </div>
-            <p class="new-tab__desc">
-              A solution for your browser tabs and don’t make your device get
-              slower over time. Get ease and faster to discover a trend with
-              just one tab.
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Minimize your tabs. Find the trends!</h1>
+            <p class="hero__desc">
+              Don’t let your computer memories consumes all of those browser
+              tabs. <br />
+              Findtrend let you gathers all of your favorite website into one
+              place.
             </p>
-          </div>
-        </section>
-        <section class="long-text">
-          <div class="container">
-            <p class="long-text__text">
-              Findtrend helps you to increase your productivity and reduce your
-              computer's memory load,
-              <span
-                >an application that can fulfill your daily browsing
-                needs.</span
-              >
-            </p>
-          </div>
-        </section>
-        <section class="partner">
-          <div class="container">
-            <h2 class="partner__title">Findtrend make +1000 Startup grow</h2>
-            <div class="partner__brands-wrapper">
-              <img src="/assets/Brands/1.png" alt="" />
-              <img src="/assets/Brands/2.png" alt="" />
-              <img src="/assets/Brands/3.png" alt="" />
-              <img src="/assets/Brands/4.png" alt="" />
-              <img src="/assets/Brands/5.png" alt="" />
-              <img src="/assets/Brands/6.png" alt="" />
-              <img src="/assets/Brands/7.png" alt="" />
-              <img src="/assets/Brands/8.png" alt="" />
-              <img src="/assets/Brands/9.png" alt="" />
-              <img src="/assets/Brands/10.png" alt="" />
-              <img src="/assets/Brands/11.png" alt="" />
-              <img src="/assets/Brands/12.png" alt="" />
-              <img src="/assets/Brands/13.png" alt="" />
-              <img src="/assets/Brands/14.png" alt="" />
-              <img src="/assets/Brands/15.png" alt="" />
-              <img src="/assets/Brands/16.png" alt="" />
+            <div class="hero__get-started">
+              <a class="hero__get-started-button" href="">Get Started 🔥</a>
             </div>
           </div>
-        </section>
-        <section class="twitter">
-          <div class="container">
-            <h2 class="twitter__title">All platform connect to Findtrend</h2>
-            <div class="twitter__socials-wrapper">
-              <img src="/assets/socials/social_media1.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media2.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media3.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media4.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media5.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media6.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media7.svg" alt="" srcset="" />
-              <img src="/assets/socials/social_media8.svg" alt="" srcset="" />
-            </div>
-            <div class="twitter__tweets-wrapper">
-              <img src="/assets/tweets/tweet_1.png" alt="" />
-              <img src="/assets/tweets/tweet_2.png" alt="" />
-              <img src="/assets/tweets/tweet_3.png" alt="" />
-            </div>
-            <a href="" class="twitter__button">View More Trend</a>
+          <div class="hero__tabs">
+            <img src="/assets/tabs/tab1.png" alt="" class="hero__tab" />
+            <img src="/assets/tabs/tab2.png" alt="" class="hero__tab" />
+            <img src="/assets/tabs/tab3.png" alt="" class="hero__tab" />
+            <img src="/assets/tabs/tab4.png" alt="" class="hero__tab" />
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </div>
-    <footer></footer>
+    <main>
+      <section class="new-tab">
+        <div class="container">
+          <h2 class="new-tab__title">Open new tabs is sh*t</h2>
+          <div class="new-tab__tab-wrapper">
+            <img class="new-tab__tab" src="/assets/tabs/tab5.png" alt="" />
+          </div>
+          <p class="new-tab__desc">
+            A solution for your browser tabs and don’t make your device get
+            slower over time. Get ease and faster to discover a trend with just
+            one tab.
+          </p>
+        </div>
+      </section>
+      <section class="long-text">
+        <div class="container">
+          <p class="long-text__text">
+            Findtrend helps you to increase your productivity and reduce your
+            computer's memory load,
+            <span
+              >an application that can fulfill your daily browsing needs.</span
+            >
+          </p>
+        </div>
+      </section>
+      <section class="partner">
+        <div class="container">
+          <h2 class="partner__title">Findtrend make +1000 Startup grow</h2>
+          <div class="partner__brands-wrapper">
+            <img src="/assets/Brands/1.png" alt="" />
+            <img src="/assets/Brands/2.png" alt="" />
+            <img src="/assets/Brands/3.png" alt="" />
+            <img src="/assets/Brands/4.png" alt="" />
+            <img src="/assets/Brands/5.png" alt="" />
+            <img src="/assets/Brands/6.png" alt="" />
+            <img src="/assets/Brands/7.png" alt="" />
+            <img src="/assets/Brands/8.png" alt="" />
+            <img src="/assets/Brands/9.png" alt="" />
+            <img src="/assets/Brands/10.png" alt="" />
+            <img src="/assets/Brands/11.png" alt="" />
+            <img src="/assets/Brands/12.png" alt="" />
+            <img src="/assets/Brands/13.png" alt="" />
+            <img src="/assets/Brands/14.png" alt="" />
+            <img src="/assets/Brands/15.png" alt="" />
+            <img src="/assets/Brands/16.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="twitter">
+        <div class="container">
+          <h2 class="twitter__title">All platform connect to Findtrend</h2>
+          <div class="twitter__socials-wrapper">
+            <img src="/assets/socials/social_media1.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media2.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media3.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media4.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media5.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media6.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media7.svg" alt="" srcset="" />
+            <img src="/assets/socials/social_media8.svg" alt="" srcset="" />
+          </div>
+          <div class="twitter__tweets-wrapper">
+            <img src="/assets/tweets/tweet_1.png" alt="" />
+            <img src="/assets/tweets/tweet_2.png" alt="" />
+            <img src="/assets/tweets/tweet_3.png" alt="" />
+          </div>
+          <a href="" class="twitter__button">View More Trend</a>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="container">
+          <h2 class="subscription__title">Get your best deal</h2>
+          <div class="subscription__switch-wrapper">
+            <p class="subscription__text active">Monthly</p>
+            <div class="subscription__switch-outter">
+              <div class="subscription__switch-inner"></div>
+            </div>
+            <p class="subscription__text" id="yearly">Yearly</p>
+            <img
+              class="subscription__discount"
+              src="/assets/logos_icons/sub_price.svg"
+              alt=""
+            />
+          </div>
+          <div class="subscription__plans">
+            <div class="subscription__plan">
+              <div class="plan__header">
+                <h3 class="plan__title">Personal</h3>
+                <p class="plan__desc">Special first packet for all</p>
+                <hr />
+              </div>
+              <div class="plan__main">
+                <p class="plan__price"><span>$8</span>/Month</p>
+                <ul class="plan__benefits">
+                  <li class="plan__benefit">Up to 5 page each group</li>
+                  <li class="plan__benefit">Up to 10 group page</li>
+                  <li class="plan__benefit">5 Days group page saved</li>
+                </ul>
+              </div>
+              <a href="" class="plan__button">Start Free Trial</a>
+            </div>
+            <div class="subscription__plan">
+              <div class="plan__header">
+                <h3 class="plan__title">Regular</h3>
+                <p class="plan__desc">Recommended for personal pro</p>
+                <hr />
+              </div>
+              <div class="plan__main">
+                <p class="plan__price"><span>$20</span>/Month</p>
+                <ul class="plan__benefits">
+                  <li class="plan__benefit">Up to 15 page each group</li>
+                  <li class="plan__benefit">Download page up to 20 page</li>
+                  <li class="plan__benefit">Up to 10 group page</li>
+                  <li class="plan__benefit">15 Days group page saved</li>
+                </ul>
+              </div>
+              <a href="" class="plan__button">Start Free Trial</a>
+            </div>
+            <div class="subscription__plan">
+              <div class="plan__header">
+                <h3 class="plan__title">Premium</h3>
+                <p class="plan__desc">Packet for Startup & Company</p>
+                <hr />
+              </div>
+              <div class="plan__main">
+                <p class="plan__price"><span>$48</span>/Month</p>
+                <ul class="plan__benefits">
+                  <li class="plan__benefit">Unlimited group pages</li>
+                  <li class="plan__benefit">Unlimited download page</li>
+                  <li class="plan__benefit">Unlimited page each group</li>
+                  <li class="plan__benefit">Customize sorting group pages</li>
+                  <li class="plan__benefit">Customize group page name</li>
+                  <li class="plan__benefit">30 Days group page saved</li>
+                </ul>
+              </div>
+              <a href="" class="plan__button">Start Free Trial</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="email">
+        <div class="container">
+          <h2 class="email__slogan">
+            Join us on email <br /><span>more trending topics</span>
+          </h2>
+          <a href="" class="email__button">Join Now</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="/assets/logos_icons/logo_dark.png"
+        alt=""
+        class="footer__logo"
+      />
+      <ul class="footer__links">
+        <li class="footer__link"><a href="">Privacy Policy</a></li>
+        <li class="footer__link"><a href="">Terms and Conditions</a></li>
+        <li class="footer__link"><a href="">Contact Us</a></li>
+        <li class="footer__link"><a href="">Careers</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
 
 <!-- Open new tabs is sh*t 
-A solution for your browser tabs and don’t make your device get slower over time. Get ease and faster to discover a trend with just one tab. -->
+Findtrend
+Privacy Policy
+Terms and Conditions
+Contact Us
+Careers
+ -->

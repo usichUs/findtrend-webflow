@@ -104,7 +104,7 @@ img {
 }
 
 .header__logo {
-  width: 171px;
+  max-width: 171px;
 }
 
 .header__buttons-wrapper {
@@ -423,6 +423,7 @@ img {
   font-weight: 700;
 
   padding: 16px 32px;
+  border: 1px transparent solid;
 
   background-color: var(--black-1);
   border-radius: 40px;
@@ -439,6 +440,247 @@ img {
   color: var(--black-1);
 }
 
+/* Subscription */
+.subscription {
+  background-color: var(--black-1);
+  padding: 140px;
+}
+
+.subscription hr {
+  color: var(--black-1);
+  border-bottom: 1px solid var(--black-1);
+}
+
+.subscription .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscription__title {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.subscription__switch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  margin-bottom: 40px;
+}
+
+/* #yearly {
+  position: relative;
+}
+
+#yearly::after {
+  content: url("/assets/logos_icons/sub_price.svg");
+  position: absolute;
+  top: -38px;
+  left: 80px;
+  opacity: 1;
+} */
+
+.subscription__text {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.subscription__text.active {
+  opacity: 1;
+}
+
+.subscription__switch-outter {
+  width: 88px;
+  background-color: var(--white);
+  border-radius: 99px;
+
+  padding: 8px;
+}
+
+.subscription__switch-inner {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  background-color: var(--green-1);
+}
+
+.subscription__plans {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+
+  flex-wrap: wrap;
+}
+
+.subscription__plan {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+  border-radius: 16px;
+
+  color: var(--black-1);
+
+  padding: 32px;
+
+  height: 640px;
+  box-sizing: border-box;
+}
+
+.subscription__plan:nth-child(2) {
+  background-color: var(--green-1);
+}
+
+.subscription__plan:nth-child(2) .plan__button {
+  background: var(--black-1);
+  color: var(--white);
+}
+
+.subscription__plan:nth-child(2) .plan__button:hover {
+  background-color: var(--white);
+  color: var(--black-1);
+}
+
+.plan__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plan__desc {
+  font-size: 18px;
+}
+
+.plan__price {
+  font-size: 18px;
+}
+
+.plan__price span {
+  font-size: 64px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+/* .plan__benefits {
+  list-style: url("/assets/logos_icons/tick.svg");
+} */
+
+.plan__benefit {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.plan__benefit::before {
+  content: url("/assets/logos_icons/tick.svg");
+  margin-right: 8px;
+}
+
+.plan__benefit:last-child {
+  margin-bottom: 0;
+}
+
+.plan__button {
+  text-align: center;
+  color: var(--black-1);
+  font-weight: 700;
+
+  background-color: var(--green-1);
+
+  padding: 16px 90px;
+  border-radius: 30px;
+
+  margin-top: auto;
+
+  transition: all 0.3s ease;
+}
+
+.plan__button:hover {
+  background-color: var(--black-1);
+  color: var(--white);
+}
+/* Email */
+
+.email {
+  background-color: var(--green-1);
+  padding: 140px 0;
+}
+
+.email .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.email__slogan {
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--black-1);
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.email__slogan span {
+  color: var(--green-2);
+}
+
+.email__button {
+  padding: 16px 53px;
+
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+
+  background-color: var(--black-1);
+
+  border-radius: 40px;
+  border: 1px solid transparent;
+
+  transition: all 0.3s ease;
+}
+
+.email__button:hover {
+  background-color: transparent;
+  color: var(--black-1);
+  border: 1px solid var(--black-1);
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+}
+
+.footer__logo {
+  max-width: 170px;
+}
+
+.footer__links a {
+  color: var(--black-1);
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.footer__links a:hover {
+  opacity: 0.5;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
 /** Adaptive */
 @media (max-width: 1100px) {
   .hero__tab {
