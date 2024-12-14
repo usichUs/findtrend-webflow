@@ -692,6 +692,15 @@ img {
   margin: 0 0 40px 0;
 }
 
+.email__slogan.hidden {
+  color: var(--black-2);
+}
+
+.email__slogan.show {
+  color: var(--black-1);
+}
+
+
 .email__slogan span {
   color: var(--green-2);
 }
