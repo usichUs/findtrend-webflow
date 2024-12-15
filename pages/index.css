@@ -30,6 +30,8 @@
   --white-2: #fafafa;
 
   --delta: 150px;
+
+  --delay: 500ms;
 }
 
 body {
@@ -56,9 +58,11 @@ img {
 .hidden {
   opacity: 0;
   transition: all 1s ease;
+  filter: blur(5x);
 }
 
 .show {
+  filter: blur(0);
   opacity: 1;
 }
 
@@ -319,6 +323,7 @@ img {
 .new-tab__tab-wrapper.hidden {
   transform: translateX(0);
   transform: translateY(-100%);
+  transition-delay: var(--delay);
 }
 
 .new-tab__tab-wrapper.show {
@@ -369,6 +374,7 @@ img {
 
 .long-text__text.hidden {
   transform: translateY(-100%);
+  transition-delay: var(--delay);
 }
 
 .long-text__text.show {
@@ -403,6 +409,26 @@ img {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(4, 1fr);
   gap: 32px;
+}
+
+.partner__brands-wrapper img.hidden {
+  transform: translateX(-100%);
+}
+
+.partner__brands-wrapper img.show {
+  transform: translateX(0);
+}
+
+.partner__brands-wrapper img.hidden:nth-child(4n + 2) {
+  transition-delay: calc(var(--delay) / 2);
+}
+
+.partner__brands-wrapper img.hidden:nth-child(4n + 3) {
+  transition-delay: var(--delay);
+}
+
+.partner__brands-wrapper img.hidden:nth-child(4n + 4) {
+  transition-delay: calc(var(--delay) * 1.5);
 }
 
 /* twitter */
@@ -693,13 +719,15 @@ img {
 }
 
 .email__slogan.hidden {
+  transform: translateX(-100%);
   color: var(--black-2);
+  transition-delay: var(--delay);
 }
 
 .email__slogan.show {
+  transform: translateX(0);
   color: var(--black-1);
 }
-
 
 .email__slogan span {
   color: var(--green-2);
@@ -755,6 +783,12 @@ footer {
   gap: 40px;
 }
 /** Adaptive */
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 @media (max-width: 1100px) {
   .hero__tab {
     position: static;
